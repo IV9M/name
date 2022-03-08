@@ -1,0 +1,8 @@
+while true do task.wait(5.6)
+game.Lighting.Blur.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+                    wait()
+                    game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+                    task.wait()
+end
